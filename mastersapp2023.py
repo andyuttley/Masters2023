@@ -281,13 +281,5 @@ if showdata:
         data
 
 
-#TO DO
-## players in masters
-## par 5 last year
-## masters history
-## pca scatter
-## simulation? 100k masters
-## better logic for prediction?
-
 
 
