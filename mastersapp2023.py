@@ -6,29 +6,12 @@ from PIL import Image
 import plotly.graph_objs as go
 import requests
 from bs4 import BeautifulSoup
-import toml
+
 
 # Set the title and icon of the app
-#st.set_page_config(page_title="Masters 2023 Predictor", page_icon=":golf:", initial_sidebar_state="expanded")
+st.set_page_config(page_title="Masters 2023 Predictor", page_icon=":golf:", initial_sidebar_state="expanded")
 
 
-# Load configuration settings from config.toml file
-config = toml.load(".streamlit/config.toml")
-
-# Set the page configuration
-st.set_page_config(
-    page_title=config["title"],
-    page_icon=config["icon"],
-    layout=config["layout"],
-    initial_sidebar_state=config["sidebar_state"],
-    )
-
-# Set the page background color
-st.markdown(f"""<style>
-    .reportview-container {{
-        background-color: {config["theme"]["backgroundColor"]}
-    }}
-</style>""", unsafe_allow_html=True)
 
 # scrape stats
 # Fetch the website content
