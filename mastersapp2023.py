@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 
 
 # Set the title and icon of the app
-st.set_page_config(page_title="Masters 2023 Predictor", page_icon=":golf:", initial_sidebar_state="expanded")
+#st.set_page_config(page_title="Masters 2023 Predictor", page_icon=":golf:", initial_sidebar_state="expanded")
 
 
 
