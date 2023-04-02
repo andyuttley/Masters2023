@@ -13,7 +13,7 @@ import toml
 
 
 # Load configuration settings from config.toml file
-config = toml.load("config.toml")
+config = toml.load(".streamlit/config.toml")
 
 
 
