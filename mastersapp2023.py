@@ -259,7 +259,7 @@ fig.add_trace(go.Scatter(x=merged_data['PC1'], y=merged_data['PC2'], mode='marke
                          marker=dict(color=merged_data['prediction'], colorscale=colorscale,
                                      size=merged_data['prediction'] * 2, sizemode='diameter', sizemin=5)
                          ,
-                         textposition='bottom center', textfont=dict(size=10, color='black')))
+                         textposition='bottom center', textfont=dict(size=10, color='white')))
 fig.update_layout(width=800, height=600, title="PCA Scatter Plot")
 
 # Display the plot using Streamlit
