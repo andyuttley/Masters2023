@@ -6,11 +6,14 @@ from PIL import Image
 import plotly.graph_objs as go
 import requests
 from bs4 import BeautifulSoup
-
+import toml
 
 # Set the title and icon of the app
 #st.set_page_config(page_title="Masters 2023 Predictor", page_icon=":golf:", initial_sidebar_state="expanded")
 
+
+# Load configuration settings from config.toml file
+config = toml.load("config.toml")
 
 
 
