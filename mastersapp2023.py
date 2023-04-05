@@ -192,9 +192,8 @@ st.write("Results are calculated using the weightings you have applied to histor
 
 
 df_results2 = pd.merge(df_results2, df_rankings[['Name', 'Rank']], on='Name', how='left')
-df_results2
 df_results2['Rank'] = pd.to_numeric(df_results2['Rank'], errors='coerce')
-df_results2['Rank in Masters'] = df_results2['Rank'].rank(method='min', ascending=True)
+df_results2['Rank in Masters'] = range(1, len(df_results2) + 1)
 df_results2 = df_results2.rename(columns={'Rank': 'Current World Rank'})
 df_results2['Current World Rank'] = pd.to_numeric(df_results2['Current World Rank'], errors='coerce')
 df_results2['Current World Rank'] = df_results2['Current World Rank'].fillna(72)
